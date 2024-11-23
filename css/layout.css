@@ -1,0 +1,73 @@
+/* Réalisé par Jérémy BYRDY--CHERON */
+/* pour le lecteur en bas, permet d'aligner la musique jouée et les contrôles */
+.app-bottom {
+  display: flex;
+  align-items: stretch;
+}
+
+/* permet de mettre l'image à gauche du texte (Ici : Random Access Memories, le groupe, l'année de sortie, la durée et le nombre de titres. Et que les blocs fassent la même taille */
+.album {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 2;
+}
+/* rajoute la barre jaune entre le bloc du bas, et le bloc de l'album */
+.app-content {
+  margin-bottom: 50px;
+}
+/* permet de mettre le nom du titre à gauche, et la durée à droite */
+.track-item {
+  display: flex;
+  justify-content: space-between;
+}
+/* permet de mettre la barre de nav à côté du bloc principal et qu'elle fasse la même taille*/
+.app-top {
+  display: flex;
+  align-items: stretch;
+}
+
+.app-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 825px;
+}
+/* permet de mettre en ligne le bloc app-content, le width doit permettre d'atteindre la droite de l'écran, et  */
+.app-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 2000px;
+}
+/* mets le texte à côté de l'image tout en bas */
+.app-bottom div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* mets le groupe en dessous du titre dans le cadre du bas  */
+.app-bottom div .current-details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 1250px;
+}
+/* applique la couleur gris foncé à la nav */
+.app-nav {
+  width: 50px;
+  background: #313131;
+  color: #fff;
+}
+/* applique la couleur gris foncé au bas de la page, avec la musique en cours */
+.app-bottom {
+  background: #313131;
+  color: #fff;
+  padding: 20px;
+}
+/* permet de mettre un dégradé du noir au gris foncé */
+.app-wrapper {
+  background: linear-gradient(#000, #313131);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
